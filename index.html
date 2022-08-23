@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Open+Sans:wght@300&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <script src="js\all.min.js"></script>
+    <script src="js\bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">The Book Store</a>
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="d-flex position-absolute top-50 start-50 translate-middle" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-heart"></i></a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <li class="nav-item lang ms-2">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle btn-md" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                En
+              </button>
+              <ul id="dropMenu" class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">En</button></li>
+                <li><button class="dropdown-item" type="button">Ar</button></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-light nav2">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item  me-4">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item  me-4">
+              <a class="nav-link" href="#">Bestseller</a>
+            </li>
+            <li class="nav-item me-4">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle btn-md" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Romantic</button></li>
+                  <li><button class="dropdown-item" type="button">Fiction</button></li>
+                  <li><button class="dropdown-item" type="button">Kids</button></li>
+                  <li><button class="dropdown-item" type="button">Español</button></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item  me-4">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container p-5 rounded flex-row align-items-center
+      d-flex justify-content-around">
+        <div>
+          <h1>Build your library</h1>
+        <p>Buy two books, and get <br> one for free</p>
+        <button class="btn">
+          View all
+        </button>
+        </div>
+        <div>
+          <img src="imgs/july-new-releases-products-img.png" alt="">
+        </div>
+        <div>
+          <img src="imgs/man-reading.png" alt="reading">
+        </div>
+    </main>
+
+    <div class="container cards-block d-flex justify-content-around flex-wrap">
+      <div class="card mb-5 col-4 text-bg-light me-2" style="width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img 
+            src="books/101essaysthatwillchangethewayyouthink.jpeg" 
+            class="img-fluid rounded-start" 
+            alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">101 Essays That Will Change The Way you think </h5>
+              <p class="card-text">In her second compilation of published writing, 
+                Brianna Wiest explores pursuing purpose over passion, embracing negative 
+                thinking, seeing the wisdom in daily routine, and becoming aware of the cognitive 
+                biases that are creating the way you see your life. This book contains never before 
+                seen pieces as well as some of Brianna's most popular essays, all of which just might</p>
+                <button class="btn">
+                  View all
+                </button>
+                <div class="d-flex card-end 
+                justify-content-between ">
+                  <p class="card-text2"><small class="text-muted">Brianna Wiest</small></p>
+              <button class="btn cart align-self-start " >
+                Buy <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-5 col-4 text-bg-light " style="width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img 
+            src="books/allthebrightplaces.jpeg" 
+            class="img-fluid rounded-start" 
+            alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title mb-3">All the Bright <br> Places</h5>
+              <p class="card-text mb-5">All the Bright Places takes place in modern day Indiana and follows two 
+                teenagers named Violet and Finch. Finch is a boy with a harsh past who struggles 
+                with mental illness, even though his family and friends won't admit it. 
+                He is known as a “freak” at school and gets bullied frequently.</p>
+                <button class="btn">
+                  View all
+                </button>
+                <div class="d-flex card-end 
+                justify-content-between mt-3 mb-2">
+                  <p class="card-text"><small class="text-muted">Jennifer Niven</small></p>
+              <button class="btn cart align-self-start">
+                Buy <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-5 col-4 text-bg-light me-2" style="width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img 
+            src="books/itendswithus.jpeg" 
+            class="img-fluid rounded-start" 
+            alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title mb-4">it ends with us</h5>
+              <p class="card-text mb-5">It Ends With Us is the story of Lily who witnessed her mother getting 
+                abused by her father all her life and feeling helpless to do anything about it. Determined to live 
+                her life on her terms, she moves to Boston and it is 
+                here that she meets Dr. Ryle Kincaid.</p>
+                <button class="btn">
+                  View all
+                </button>
+                <div class="d-flex card-end 
+                justify-content-between mt-3 mb-2">
+                  <p class="card-text"><small class="text-muted">Colleen Hoover </small></p>
+              <button class="btn cart align-self-start">
+                Buy <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-5 col-4 text-bg-light " style="width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img 
+            src="books/everythingeverythng.jpeg" 
+            class="img-fluid rounded-start" 
+            alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title mb-3">everything<br> everythng </h5>
+              <p class="card-text mb-5"> 18-year-old Madeline Whittier, a half Japanese, half African-American
+                18-year-old who is being treated by her doctor mother for severe combined immunodeficiency (SCID), and therefore
+                is not allowed to leave her house or interact with anything that has not been "sanitized"</p>
+                <button class="btn">
+                  View all
+                </button>
+                <div class="d-flex card-end 
+                justify-content-between mt-3 mb-2">
+                  <p class="card-text"><small class="text-muted">Nicola Yoon</small></p>
+              <button class="btn cart align-self-start">
+                Buy <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-5 col-4 text-bg-light me-2" style="width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img 
+            src="books/holdinguptheuniverse.jpeg" 
+            class="img-fluid rounded-start" 
+            alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title mb-4">holding up  <br>the universes</h5>
+              <p class="card-text mb-5">Jack Masselin, a 17-year-old popular boy who
+                secretly has a neurological disorder called prosopagnosia that inhibits his ability to 
+                recognize faces, and Libby Strout,  16-year-old overweight girl who had to be
+                lifted from her home by crane after a panic attack.</p>
+                <button class="btn">
+                  View all
+                </button>
+                <div class="d-flex card-end 
+                justify-content-between mt-3 mb-2">
+                  <p class="card-text"><small class="text-muted">Jennifer Niven</small></p>
+              <button class="btn cart align-self-start">
+                Buy <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-5 col-4 text-bg-light " style="width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img 
+            src="books/ifistay.jpeg" 
+            class="img-fluid rounded-start" 
+            alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title mb-5">if i stay</h5>
+              <p class="card-text mb-5">'If I Stay' is enriched with 
+                themes that perfectly describe how pain, suffering, and love 
+                define choice. 'If I Stay' is about 17-year-old Mia Hall, who faces
+                a tragedy that leaves her family dead and makes her have an out-of-body 
+                experience. Mia realizes she has to choose between leaving or staying.</p>
+                <button class="btn">
+                  View all
+                </button>
+                <div class="d-flex card-end 
+                justify-content-between mt-3 mb-2">
+                  <p class="card-text"><small class="text-muted">Gayle Forman</small></p>
+              <button class="btn cart align-self-start">
+                Buy <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
